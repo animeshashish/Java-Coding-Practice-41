@@ -1,8 +1,8 @@
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
-//  Using sort() method of Arrays class
-public class ArrayInAscendingOrder {
+public class ArrayInDecendingOrder {
     public static void main(String[] args) {
 
         int n, temp;
@@ -23,15 +23,14 @@ public class ArrayInAscendingOrder {
         // Display elements of original array
         for (int i =0; i < arr.length; i++) {
             System.out.println(arr[i] + " ");
+
+            // Using Collection.reverseOrder() method to sort array elements in descending order
+         //   Arrays.sort(arr, Collections.reverseOrder());
+
+            // Printing the elements
+            System.out.println(Arrays.toString(arr));
         }
-
-
-        // Using Arrays.sort() method to sort array elements in ascending order
-        Arrays.sort(arr);
-
-
-        // Display elements after sorting
-        System.out.println("Elements in ascending order:" + Arrays.toString(arr));
 
     }
 }
+
